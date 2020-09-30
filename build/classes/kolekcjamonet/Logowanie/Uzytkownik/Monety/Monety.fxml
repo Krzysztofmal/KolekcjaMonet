@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kolekcjamonet.Logowanie.Uzytkownik.Monety.MonetyController">
+   <children>
+      <TableView fx:id="tableMonety" layoutX="61.0" layoutY="140.0" onMouseClicked="#zaznacz" prefHeight="202.0" prefWidth="675.0" stylesheets="@../../../css/table.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="140.0">
+         <columns>
+            <TableColumn fx:id="columnNazwa" prefWidth="146.0" text="Nazwa monety" />
+            <TableColumn fx:id="columnPochodzenie" prefWidth="97.0" text="Pochodzenie" />
+            <TableColumn fx:id="columnRok" prefWidth="72.0" text="Rok" />
+            <TableColumn fx:id="columnOpis" prefWidth="359.0" text="Opis" />
+         </columns>
+      </TableView>
+      <HBox layoutX="50.0" layoutY="486.0" prefHeight="51.0" prefWidth="675.0" AnchorPane.bottomAnchor="35.0">
+         <children>
+            <JFXButton fx:id="dodajMoneteBtn" onAction="#dodajMonete" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ MONETĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="edytujMoneteBtn" onAction="#edytujMonete" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="EDYTUJ MONETĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="usunMoneteBtn" onAction="#usunMoneteBtn" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="USUŃ MONETĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXComboBox fx:id="cbKolekcje" labelFloat="true" layoutX="250.0" layoutY="47.0" prefHeight="40.0" prefWidth="276.0" promptText="Wybierz kolekcję" />
+      <ImageView fx:id="IV" fitHeight="150.0" fitWidth="200.0" layoutX="288.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

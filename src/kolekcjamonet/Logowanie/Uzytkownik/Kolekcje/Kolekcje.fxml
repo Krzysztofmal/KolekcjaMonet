@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kolekcjamonet.Logowanie.Uzytkownik.Kolekcje.KolekcjeController">
+   <children>
+      <TableView fx:id="tableKolekcja" layoutX="61.0" layoutY="66.0" onMouseClicked="#zaznacz" prefHeight="360.0" prefWidth="675.0" stylesheets="@../../../css/table.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="columnNazwa" prefWidth="216.0" text="Nazwa kolekcji" />
+          <TableColumn fx:id="columnOpis" prefWidth="452.0" text="Opis" />
+        </columns>
+      </TableView>
+      <HBox layoutX="50.0" layoutY="486.0" prefHeight="51.0" prefWidth="675.0">
+         <children>
+            <JFXButton fx:id="dodajKolekcjeBtn" onAction="#dodajKolekcje" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ KOLEKCJĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="edytujKolekcjeBtn" onAction="#edytujKolekcje" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="EDYTUJ KOLEKCJĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="usunKolekcjeBtn" onAction="#usunKolekcje" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="USUŃ KOLEKCJĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

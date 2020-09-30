@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="bocznyPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kolekcjamonet.Logowanie.Uzytkownik.UzytkownikDrawerController">
+   <children>
+      <ImageView fitHeight="243.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Obrazki/fawicon.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="4.5" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton accessibleText="twojeDane" maxWidth="200.0" prefHeight="67.0" style="-fx-border-style: solid inside; -fx-border-color: gray;" text="TWOJE DANE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton accessibleText="twojeKolekcje" maxWidth="200.0" prefHeight="67.0" style="-fx-border-style: solid inside; -fx-border-color: gray;" text="TWOJE KOLEKCJE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton accessibleText="twojeMonety" maxWidth="200.0" prefHeight="67.0" style="-fx-border-style: solid inside; -fx-border-color: gray;" text="TWOJE MONETY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton accessibleText="wylogujSie" maxWidth="200.0" prefHeight="67.0" style="-fx-border-style: solid inside; -fx-border-color: gray;" text="WYLOGUJ SIĘ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton accessibleText="wyjscieExit" maxWidth="200.0" prefHeight="67.0" style="-fx-border-style: solid inside; -fx-border-color: gray;" text="WYJŚCIE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</VBox>

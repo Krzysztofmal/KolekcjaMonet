@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="KolekcjaMonet.jnlp">
+  <information>
+    <title>KolekcjaMonet</title>
+    <vendor>BlackHawk</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="KolekcjaMonet.jar" size="402595" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2350676" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.16.1.jar" size="6161579" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="KolekcjaMonet" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="kolekcjamonet.KolekcjaMonet"  name="KolekcjaMonet" />
+  <update check="always"/>
+</jnlp>

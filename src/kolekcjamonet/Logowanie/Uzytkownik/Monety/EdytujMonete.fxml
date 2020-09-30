@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="kolekcjamonet.Logowanie.Uzytkownik.Monety.EdytujMoneteController">
+   <children>
+      <VBox layoutX="135.0" layoutY="69.0" prefHeight="392.0" prefWidth="475.0" spacing="40.0" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <JFXTextField fx:id="fNazwa" prefHeight="35.0" promptText="Nazwa monety">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="fPochodzenie" prefHeight="35.0" promptText="Pochodzenie">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="fRok" prefHeight="35.0" promptText="Rok">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="fOpis" prefHeight="64.0" prefWidth="475.0" promptText="Krótki opis">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="wybierzZdjecieBtn" onAction="#wybierzZdjecie" prefHeight="50.0" prefWidth="488.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="WYBIERZ ZDJĘCIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox layoutX="155.0" layoutY="514.0" prefHeight="52.0" prefWidth="475.0">
+         <children>
+            <JFXButton fx:id="zapiszMoneteBtn" onAction="#zapiszMonete" prefHeight="50.0" prefWidth="190.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="ZAPISZ MONETĘ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="60.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="anulujBtn" onAction="#anuluj" prefHeight="50.0" prefWidth="190.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="ANULUJ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
